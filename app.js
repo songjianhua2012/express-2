@@ -13,7 +13,7 @@ app.engine('html', hbs.__express);
 //app.use(express.bodyParser());
 
 app.get('/', function(req, res) {
-   res.sendFile(__dirname+'/pdf');
+   res.render('dpdf');
 });
 
 

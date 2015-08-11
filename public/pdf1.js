@@ -51,8 +51,8 @@ function singleChoice(str1,str2) {
 singleChoice('2_1','2');
 singleChoice('2_2','2_2_1');
 
-
-document.getElementById('submit').addEventListener('click',function(){
+document.getElementById('submit').addEventListener('click',function(evt){
+    evt.preventDefault();
     document.getElementsByName('score')[0].value = getScore();
 });
 
